@@ -1,0 +1,135 @@
+/* Tableau suivi de caisses */
+
+.suivi__caisses {
+    border-collapse: collapse;/* pour des lignes bien nettes */
+    width: 80%;                        
+    margin: auto;     /* centre le tableau */
+}
+
+/* Le titre */
+.suivi__caisses caption {
+    caption-side: bottom; /* Le titre en dessous du tableau */
+    background-color: lightgray;
+    padding: 1px;
+    text-align: center;
+}
+    
+/* Lignes de séparation */
+.suivi__caisses th, .suivi__caisses td {
+    border: 1px solid #333333; 
+    padding: 10px; /* espace intérieur */
+    text-align: center;
+}
+    
+/* Ligne d'en-tête */
+.suivi__caisses th {
+    background-color: darkgray;
+    color: #333333;
+    font-weight: bold;
+}
+
+/* Lignes impairs */
+.suivi__caisses tr:nth-child(odd) {
+    background-color: #f3f3f3; 
+}
+
+/* Lignes pairs */
+.suivi__caisses tr:nth-child(even) {
+    background-color: lightgrey; 
+}
+    
+/* Dernière ligne*/
+.suivi__caisses tfoot tr:last-child {
+    font-weight: bold;
+    background-color:darkgrey;
+    color: #333333;
+}
+
+/* Tableau d'horaires d'ouverture */
+
+.ouverture{
+    border-collapse: collapse;/* pour des lignes bien nettes */
+    width: 50%;                        
+    margin: 50px auto; /* 50px en haut et bas, centré horizontalement */
+}
+
+/* Le titre */
+.ouverture caption {
+    caption-side: bottom;
+    background-color: #fffa7c;
+    color: #333333;
+    text-align: center;
+    font-style: italic;
+    font-size: 0.8em;
+    font-weight: bold;
+
+    border: 1px solid #333333;
+    padding: 5px; 
+    margin-top: -1px; /* colle la bordure au tableau */
+}
+
+/* Lignes de séparation */
+.ouverture th, .ouverture td {
+    border: 1px solid #333333; 
+    padding: 10px; /* espace intérieur */
+    text-align: center;
+}
+    
+/* Lignes d'en-têtes */
+.ouverture thead tr{
+    background-color: #fffa7c;
+    font-weight: bold;
+    color: #333333;
+}
+
+/* Lignes impairs */
+.ouverture tbody tr:nth-child(odd) {
+    background-color: #fffa7c; 
+    color: #333333;
+}
+
+/* Lignes pairs */
+.ouverture tbody tr:nth-child(even) {
+    background-color: #b9ffd6;
+    color: #333333; 
+}
+
+/* Couleurs ouvert et fermé */
+.ouvert{
+    background-color: #08c3ff;
+    color: #f3f3f3;
+}
+
+.ferme{
+    background-color: #8844cc;
+    color: #f3f3f3;
+}
+
+/* Dernière ligne*/
+.ouverture tfoot tr{
+     background-color: #fffa7c;
+    color: #333333;
+}
+
+
+/* Retour Acceuil */
+footer p a{
+    position: fixed;        
+    bottom: 20px;            
+    right: 20px;             
+    text-decoration: none;
+    background-color: #8844cc;  
+    color: white;              
+    border: 2px solid #8844cc;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px #8844cc;
+}
+
+footer p a:hover{
+    color:#fffa7c;
+}
+
+
+    

@@ -1,0 +1,57 @@
+
+.image-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  /* Centre les images horizontalement */
+    gap: 30px;
+}
+
+.image-flex img {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;        /* Conserve le ratio sans déformer l’image */
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 260px);   /* 3 colonnes fixes */
+    grid-template-rows: repeat(2, 260px);      /* 2 lignes fixes */
+    gap: 10px;
+    grid-template-areas:
+        "img1 img2 img3"
+        "img4 img2 img5";     /* Image 2 occupe deux lignes au centre */
+    justify-content: center;
+}
+
+.image-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;        /* Conserve le ratio sans déformer l’image */
+    display: block;
+}
+
+/* Placement des images dans la grille selon les zones définies */
+.image-grid img:nth-child(1) { grid-area: img1; }
+.image-grid img:nth-child(2) { grid-area: img2; }
+.image-grid img:nth-child(3) { grid-area: img3; }
+.image-grid img:nth-child(4) { grid-area: img4; }
+.image-grid img:nth-child(5) { grid-area: img5; }
+
+/* Retour Acceuil */
+footer a{
+    position: fixed;        
+    bottom: 20px;            
+    right: 20px;             
+    text-decoration: none;
+    background-color: #8844cc;  
+    color: white;              
+    border: 2px solid #8844cc;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px #8844cc;
+}
+
+footer a:hover{
+    color:#fffa7c; 
+}

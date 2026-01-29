@@ -1,0 +1,74 @@
+/* Première partie du site : l'entête */
+
+    header{
+        padding: 10px;
+        background-color: #8844cc
+    }
+
+    .menu {
+        text-align: center; /* Centre les éléments dans le nav */
+    }
+  
+    .menu__list {
+        list-style: none; /* Enlève les puces */
+        margin: 0;
+        padding: 0;
+        display: inline-flex; /* Rend les items horizontaux */
+    }
+  
+    .menu__link {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: bold;
+        padding: 8px 12px;
+        border-radius: 4px;
+    }
+
+    .menu__link:hover{
+        color:#fffa7c;
+    }
+
+/* Deuxième partie du site : le corps */
+
+    .list{ /* Liste des exercices */
+        line-height: 1.6;
+        list-style-type: square;
+        text-decoration: underline; /* soulignement */
+    }
+
+    .liste-fleche { 
+        list-style: none; 
+        padding-left: 0;
+    }
+      
+    .liste-fleche li::before {
+        content: "\27A4"; /* Fléche */
+        color: #333333;
+        padding-right: 5px;
+        font-size: 0.8em;
+    }
+
+    article p strong{
+        font-style: italic;
+    }
+
+    article a{ /* Liens vers les exercices */
+        background-color: #8844cc;
+        border: 2px solid #8844cc;
+        border-radius: 5px;
+        padding: 5px;
+        margin: 5px;
+        color: #ffffff;
+        text-decoration: none; /* Enlève la ligne soulignée */
+    }
+
+    .corps__link:hover{
+        color:#fffa7c; /*Couleur de survol des liens*/
+    }
+
+    footer{
+        text-align: center;
+        background-color: #8844cc;
+        padding: 15px;
+        color: #ffffff
+    }

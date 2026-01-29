@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 2</title>
+    <link rel="stylesheet" href="../css/style-start.css">
+    <link rel="stylesheet" href="../css/exercice-2.css">
+</head>
+
+<body>
+    <header>
+        <h1>Exercice 2 : Tableaux</h1>
+    </header>
+
+    <main>
+        <table class="suivi__caisses">
+        
+        <caption>Suivi des mouvements de caisses</caption>
+        
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Débit</th>
+                <th>Crédit</th>
+                <th>Balance</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>01/02/2024</td>
+                <td></td>
+                <td>250,00</td>
+                <td>+250,00</td>
+            </tr>
+            <tr>
+                <td>02/02/2024</td>
+                <td>100,00</td>
+                <td></td>
+                <td>+150,00</td>
+            </tr>
+            <tr>
+                <td>03/02/2024</td>
+                <td>50,00</td>
+                <td>150,00</td>
+                <td>+250,00</td>
+            </tr>
+            <tr>
+                <td>04/02/2024</td>
+                <td></td>
+                <td></td>
+                <td>+250,00</td>
+            </tr>
+            <tr>
+                <td>05/02/2024</td>
+                <td>150,00</td>
+                <td></td>
+                <td>+250,00</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+             <tr>
+                <th>Totaux</th>
+                <td>150,00</td>
+                <td>400,00</td>
+                <td>+250,00</td>
+            </tr>
+        </tfoot>
+           
+        
+            
+          
+    </table>
+    
+    <table class="ouverture">
+
+        <caption><small>Horaires d'ouverture</small></caption>
+
+        <thead>
+            <tr>
+                <th rowspan="2">Jour</th>
+                <th colspan="2">Matin</th>
+                <th colspan="2">Aprés-Midi</th>
+            </tr>
+
+            <tr>
+                <td><strong>09h00</strong></td>
+                <td><strong>12h00</strong></td>
+                <td><strong>14h00</strong></td>
+                <td><strong>18h00</strong></td>    
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Lundi</td>
+                <td colspan="2" class="ferme">Fermé</td>
+                <td colspan="2" class="ouvert">Ouvert</td>
+            </tr>
+            <tr>
+                <td>Mardi</td>
+                <td colspan="2" class="ouvert">Ouvert</td>
+                <td colspan="2" class="ouvert">Ouvert</td>
+            </tr>
+            <tr>
+                <td>Mercredi</td>
+                <td colspan="2" class="ouvert">Ouvert</td>
+                <td colspan="2" class="ouvert">Ouvert</td>
+            </tr>
+            <tr>
+                <td>Jeudi</td>
+                <td colspan="2" class="ouvert">Ouvert</td>
+                <td colspan="2" class="ouvert">Ouvert</td>
+            </tr>
+            <tr>
+                <td>Vendredi</td>
+                <td colspan="2" class="ouvert">Ouvert</td>
+                <td colspan="2" class="ouvert">Ouvert</td>
+            </tr>
+            <tr>
+                <td>Samedi</td>
+                <td colspan="2" class="ouvert">Ouvert</td>
+                <td colspan="2" class="ferme">Fermé </td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Dimanche</td>
+                <td colspan="4" class="ferme">Fermé</td>
+            </tr>
+        </tfoot>       
+            
+    </table>
+    </main>
+    
+
+    <footer>
+        <p><small><a href="../../index.html">Retour Acceuil</a></small></p>
+    </footer>
+    
+</body>
+</html>

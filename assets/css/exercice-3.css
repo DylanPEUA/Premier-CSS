@@ -1,0 +1,128 @@
+/* Formulaire */
+form{
+    border: 1px solid #8844cc;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px 1px #8844cc;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: auto;
+    width: 50%;   
+}
+
+legend{
+    color: #8844cc;
+    font-weight: bold;
+    padding: 0px 10px; /* 10px à gauche et à droite */
+}
+
+/*Contour des gros titres */
+fieldset { 
+    color: #8844cc;
+    background-color: #8844cc20;
+    margin: 5px auto;
+    padding: 20px;
+    width: 80%;
+    border: 2px solid #8844cc;
+    border-radius: 10px;
+}
+
+/* Item à cocher */
+.mono {
+    display: flex;
+    gap: 4px;               
+    flex-wrap: wrap;
+    justify-content: flex-start; /* centre l’ensemble horizontalement */
+}
+
+.mono span {
+    display: flex;           /* rend chaque paire label+input horizontale */
+    align-items: center;     /* Centrage vertical */
+}
+
+.mono input{
+    accent-color: #8844cc;  
+}
+
+
+/* Les inputs de texte */
+.form-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 1rem 3rem;
+    align-items: center; /* Centrage vertical */
+}
+
+p label {
+    font-size: 0.7rem;
+}
+fieldset span{
+    font-size: 0.7rem;
+}
+
+.form-grid input{
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 0.5px solid #8844cc;
+    border-radius: 3px;   
+}
+
+.form-grid select,
+.form-grid textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+/* Ligne de séparation */
+hr {
+    width: 80%;           /* moins long */
+    margin: 20px auto;    /* centré horizontalement */
+    border: none;         /* enlève le style par défaut */
+    border-top: 2px solid #8844cc; /* ligne "grasse" avec couleur */
+}  
+
+small{
+    color: #8844cc;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;  /* centre horizontalement */
+    gap: 20px;  
+    padding: 15px;             
+}
+
+.button-container input {
+    background-color: #8844cc;  
+    color: #ffffff;               
+    border: 2px solid #8844cc;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px #8844cc;
+}
+
+.button-container input:hover {
+    color:#fffa7c;  
+}
+
+/* Retour Acceuil */
+footer a{
+    position: fixed;        
+    bottom: 20px;            
+    right: 20px;             
+    text-decoration: none;
+    background-color: #8844cc;  
+    color: white;              
+    border: 2px solid #8844cc;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px #8844cc;
+}
+
+footer a:hover{
+    color:#fffa7c; 
+}
